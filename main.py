@@ -1,4 +1,4 @@
-# This example requires the 'message_content' intent.
+# This example requires the 'message_content' intent. UPDATE: Does it?
 
 import discord
 
