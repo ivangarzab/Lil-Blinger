@@ -78,6 +78,10 @@ async def on_message(message):
       await message.channel.send(f"tu no traes nada! {author}")
     if 'voy' in msgFormat:
       await message.channel.send(f"que se vea")
+    if 'pelas' in msgFormat:
+      await message.channel.send(f"tu me la pelas {author}!")
+    if 'pelan' in msgFormat:
+      await message.channel.send(f"todos se la pelan al @Lil' Blinger#3024")
 
 @client.event
 async def on_message_delete(message):
