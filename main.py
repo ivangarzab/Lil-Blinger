@@ -17,7 +17,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.author == client.user:
-        return # Avoid the bot responding to itself\
+        return # Avoid the bot responding to itself
     
     author = message.author.mention
     msgFormat = message.content.lower()
@@ -81,7 +81,7 @@ async def on_message(message):
     if 'pelas' in msgFormat:
       await message.channel.send(f"tu me la pelas {author}!")
     if 'pelan' in msgFormat:
-      await message.channel.send(f"todos se la pelan al @Lil' Blinger#3024")
+      await message.channel.send(f"todos se la pelan al {client.user.mention}")
 
 @client.event
 async def on_message_delete(message):
