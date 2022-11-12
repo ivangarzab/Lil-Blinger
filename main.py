@@ -90,9 +90,9 @@ async def on_message(message):
       await message.channel.send(f"todos se la pelan al {client.user.mention}")
     
     #Request: Roberto
-    if 'trece' == msgFormat:
+    if 'trece' in msgFormat:
         await message.channel.send(f"entre mas me la mamas mas me crece")
-    if '13' == msgFormat:
+    if '13' in msgFormat:
         await message.channel.send(f"entre mas me la mamas mas me crece")
 
 @client.event
