@@ -8,16 +8,16 @@ assignees: ivangarzab
 ---
 
 **Who is requesting this?**
-<your name/username>
+*your name*
 
 **What is your request?**
-<what is the dialog that the bot should spit out>
+*what is the dialog that the bot should spit out*
 
 **When should this dialog be used?**
-<what keyword (e.g., "bato") should the bot answer to using this new dialog>
+*what keyword (e.g., "bato") should the bot answer to using this new dialog*
 
-**Why are you requesting this?**
-<list your reasons here>
+**Why are you requesting this?**  
+*list your reasons here*
 
-**Additional context**
-<anything else we should know>
+**Additional context**  
+*anything else we should know*
