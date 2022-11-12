@@ -24,6 +24,8 @@ async def on_message(message):
     allowed_mentions = discord.AllowedMentions(everyone = True)
 
     shouts = [f"{author} is looking for love", f"{author} cannot find any friends", f"{author} is on comms!"]
+    vergaJokes = ["chupas", f"{author} tiene hambre"]
+    
     if '<' == message.content:
       await message.channel.send(shouts[random.randint(0, 2)])
     if '<<' == message.content:
@@ -61,7 +63,7 @@ async def on_message(message):
     if 'shit' in msgFormat:
       await message.channel.send(f"A que hora pasas por el pan {author}")
     if 'verga' in msgFormat:
-      await message.channel.send(f"{author} tiene hambre")
+      await message.channel.send(vergaJokes[random.randint(0,1)])
     if 'tibia' in msgFormat:
       await message.channel.send(f"sucks")
     if 'nabbot' in msgFormat:
