@@ -88,6 +88,12 @@ async def on_message(message):
       await message.channel.send(f"tu me la pelas {author}!")
     if 'pelan' in msgFormat:
       await message.channel.send(f"todos se la pelan al {client.user.mention}")
+    
+    #Request: Roberto
+    if 'trece' in msgFormat:
+        await message.channel.send(f"entre mas me la mamas mas me crece")
+    if '13' in msgFormat:
+        await message.channel.send(f"entre mas me la mamas mas me crece")
 
 @client.event
 async def on_message_delete(message):
