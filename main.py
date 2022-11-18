@@ -1,7 +1,7 @@
 import discord
 import random
 import env
-import datetime
+import time
 
 DEFAULT_CHANNEL_BLINGERS = 485714188073697296
 
@@ -57,7 +57,7 @@ async def on_message(message):
     if 'arre' in msgFormat:
       await message.channel.send(f"arre vaquero!")    
     if 'ora' in msgFormat:
-      await message.channel.send(f"son las {datetime.datetime.now()}")
+      await message.channel.send(f"son las {time.strftime("%H:%M:%S", time.localtime())}")
     
     if 'puto' in msgFormat:
       await message.channel.send(f"puto tu {author}")
