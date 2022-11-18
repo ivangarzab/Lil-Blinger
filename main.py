@@ -1,6 +1,7 @@
 import discord
 import random
 import env
+import datetime
 
 DEFAULT_CHANNEL_BLINGERS = 485714188073697296
 
@@ -54,7 +55,9 @@ async def on_message(message):
     if 'marco' in msgFormat:
       await message.channel.send(f"POLO!")
     if 'arre' in msgFormat:
-      await message.channel.send(f"arre vaquero!")
+      await message.channel.send(f"arre vaquero!")    
+    if 'ora' in msgFormat:
+      await message.channel.send(f"{datetime.datetime.now()}")
     
     if 'puto' in msgFormat:
       await message.channel.send(f"puto tu {author}")
