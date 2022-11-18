@@ -57,7 +57,8 @@ async def on_message(message):
     if 'arre' in msgFormat:
       await message.channel.send(f"arre vaquero!")    
     if 'ora' in msgFormat:
-      await message.channel.send(f"son las {time.strftime("%H:%M:%S", time.localtime())}")
+      currentTime = time.strftime("%H:%M:%S", time.localtime())
+      await message.channel.send(f"son las {currentTime}")
     
     if 'puto' in msgFormat:
       await message.channel.send(f"puto tu {author}")
